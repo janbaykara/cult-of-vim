@@ -121,3 +121,6 @@ colorscheme solarized
 
 " Lines
 set number
+
+" Indent lines
+set list lcs=tab:\|\
