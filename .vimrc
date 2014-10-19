@@ -30,6 +30,7 @@ NeoBundle "bling/vim-airline"
 NeoBundle "tpope/vim-haml"
 NeoBundle "editorconfig/editorconfig-vim"
 NeoBundle "Shougo/neocomplcache.vim"
+NeoBundle "scrooloose/nerdtree"
 NeoBundle "Yggdroot/indentLine"
 NeoBundle "kien/ctrlp.vim"
 
@@ -66,6 +67,9 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 set shortmess+=A
 set backupdir=#/.vimbackup,~/.vim-tmp,~/tmp,/var/tmp,$HOME/Local\ Settings/Temp
 
+" Plugin filehandling
+let NERDTreeShowHidden=1
+
 " /--------------
 " | Syntax
 " \---
@@ -82,7 +86,7 @@ set expandtab
 " | Display
 " \---
 
-"  Colourscheme 
+"  Colourscheme
 syntax enable
 set background=dark
 colorscheme solarized
