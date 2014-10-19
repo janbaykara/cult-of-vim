@@ -74,8 +74,11 @@ let NERDTreeShowHidden=1
 " | Syntax
 " \---
 
-imap <C-Return> <CR><CR><C-o>k<Tab>
+" Autocomplete
+let g:neocomplcache_enable_at_startup = 1
 
+" Tabs
+imap <C-Return> <CR><CR><C-o>k<Tab>
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
