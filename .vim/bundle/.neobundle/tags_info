@@ -1,0 +1,10 @@
+ctrlp.vim
+neobundle.vim
+nerdtree
+vim-airline
+vim-colors-solarized
+vim-fugitive
+vim-haml
+vim-javascript
+vim-surround
+vim-unimpaired
