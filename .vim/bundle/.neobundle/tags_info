@@ -1,7 +1,10 @@
 ctrlp.vim
+editorconfig-vim
+indentLine
 neobundle.vim
 nerdtree
 vim-airline
+vim-autoclose
 vim-colors-solarized
 vim-fugitive
 vim-haml

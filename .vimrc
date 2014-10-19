@@ -27,10 +27,11 @@ NeoBundle "tpope/vim-fugitive"
 NeoBundle "bling/vim-airline"
 NeoBundle "tpope/vim-haml"
 NeoBundle "kien/ctrlp.vim"
-NeoBundle "editorconfig-vim"
 NeoBundle "Yggdroot/indentLine"
 NeoBundle "scrooloose/nerdtree"
 NeoBundle "pangloss/vim-javascript"
+NeoBundle "editorconfig/editorconfig-vim"
+NeoBundle "altercation/vim-colors-solarized"
 
 NeoBundleCheck
 filetype plugin indent on
@@ -57,7 +58,7 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " /=====================
 " | SETTINGS
-" /--------------
+" |--------------
 " | File handling
 " \---
 
@@ -76,3 +77,15 @@ set shiftwidth=2
 set softtabstop=2
 set smarttab
 set expandtab
+
+" /-------------
+" | Display
+" \---
+
+"  Colourscheme 
+syntax enable
+set background=dark
+colorscheme solarized
+
+" Lines
+set number
