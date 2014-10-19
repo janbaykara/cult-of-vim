@@ -115,7 +115,10 @@ set expandtab
 " | Display
 " \---
 
-"  Colourscheme
+" Type
+set guifont=Source\ Code\ Pro:h14
+
+" Colourscheme
 syntax enable
 set background=dark
 colorscheme solarized
