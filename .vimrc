@@ -20,18 +20,18 @@ NeoBundleFetch "Shougo/neobundle.vim"
 " | Installed plugins
 " \---
 
+NeoBundle "altercation/vim-colors-solarized"
+NeoBundle "pangloss/vim-javascript"
 NeoBundle "tpope/vim-unimpaired"
 NeoBundle "Townk/vim-autoclose"
 NeoBundle "tpope/vim-surround"
 NeoBundle "tpope/vim-fugitive"
 NeoBundle "bling/vim-airline"
 NeoBundle "tpope/vim-haml"
-NeoBundle "kien/ctrlp.vim"
-NeoBundle "Yggdroot/indentLine"
-NeoBundle "scrooloose/nerdtree"
-NeoBundle "pangloss/vim-javascript"
 NeoBundle "editorconfig/editorconfig-vim"
-NeoBundle "altercation/vim-colors-solarized"
+NeoBundle "Shougo/neocomplcache.vim"
+NeoBundle "Yggdroot/indentLine"
+NeoBundle "kien/ctrlp.vim"
 
 NeoBundleCheck
 filetype plugin indent on

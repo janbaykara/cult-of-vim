@@ -2,7 +2,7 @@ ctrlp.vim
 editorconfig-vim
 indentLine
 neobundle.vim
-nerdtree
+neocomplcache.vim
 vim-airline
 vim-autoclose
 vim-colors-solarized
