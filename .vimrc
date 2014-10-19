@@ -1,6 +1,9 @@
-"
-" Auto-install NeoBundle
-"
+" /=====================
+" | PLUGINS
+" |--------------
+" | NeoBundle
+" \---
+
 filetype off
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
@@ -13,19 +16,63 @@ endif
 call neobundle#rc(expand('~/.vim/bundle/'))
 NeoBundleFetch "Shougo/neobundle.vim"
 
-" .... plugins, such as ....
+" /--------------
+" | Installed plugins
+" \---
+
 NeoBundle "tpope/vim-unimpaired"
+NeoBundle "Townk/vim-autoclose"
 NeoBundle "tpope/vim-surround"
 NeoBundle "tpope/vim-fugitive"
 NeoBundle "bling/vim-airline"
 NeoBundle "tpope/vim-haml"
 NeoBundle "kien/ctrlp.vim"
+NeoBundle "editorconfig-vim"
+NeoBundle "Yggdroot/indentLine"
 NeoBundle "scrooloose/nerdtree"
 NeoBundle "pangloss/vim-javascript"
-NeoBundle "altercation/vim-colors-solarized"
 
 NeoBundleCheck
 filetype plugin indent on
 syntax on
 
+" /--------------
+" | Autorun
+" \---
+
+autocmd VimEnter * NERDTree
+autocmd BufEnter * NERDTreeMirror
+" autocmd VimEnter * wincmd w
+
+
+" /=====================
+" | KEYMAPPING
+" |--------------
+" | Config editing via \ev and \sv
+" \---
+
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+
+
+" /=====================
+" | SETTINGS
+" /--------------
+" | File handling
+" \---
+
+" Ignore .swp warnings
+set shortmess+=A
+set backupdir=#/.vimbackup,~/.vim-tmp,~/tmp,/var/tmp,$HOME/Local\ Settings/Temp
+
+" /--------------
+" | Syntax
+" \---
+
 imap <C-Return> <CR><CR><C-o>k<Tab>
+
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set smarttab
+set expandtab
