@@ -43,11 +43,10 @@ filetype indent on
 " Visual only
 set number            " show line numbers
 syntax on
-set scrolloff=4
+set scrolloff=12
 set guifont=Source\ Code\ Pro:h14
 set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
-set list listchars=tab:\|\
 set cursorline
 
 " }}}
